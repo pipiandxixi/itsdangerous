@@ -19,3 +19,5 @@ from this baseline, so scenarios do not contaminate one another.
 
 These fixtures do not establish all-language support, calibrated precision, actual branch protection,
 or correctness of upstream project behavior. Native analysis and coverage gaps remain explicit.
+
+This sentence is the documentation-only negative control.
