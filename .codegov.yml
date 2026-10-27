@@ -1,0 +1,12 @@
+version: 1
+layers:
+  - from: "codegov_acceptance/**/domain/**"
+    deny: ["codegov_acceptance/**/infra/**"]
+  - from: "codegov_acceptance/domain/**"
+    deny: ["codegov_acceptance/infra/**"]
+pr:
+  gate:
+    layer_rules: fail
+    dependency_cycles: warn
+    contract_consumers: warn
+    duplicate_code: warn
